@@ -1,26 +1,59 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+* {
+  box-sizing: border-box;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+header {
+  margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+img {
+  display: block;
+  max-width: 100%;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Moved styles.css content into globals.css */
+.banner {
+  height: 200px;
+  background-color: slategray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2 > p {
+  color: forestgreen;
+}
+
+.dis_button {
+  height: 100px;
+  border-radius: 15%;
+  border: 5px;
+  border-color: green;
+}
+
+.types-hhw {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+a {
+  padding: 5px;
+  color: forestgreen;
+  text-decoration: none;
+}
+
+.facilities {
+  display: flex;
+}
+
+.google-map {
+  flex: 1;
+  padding-bottom: 0;
+  border-bottom: 2px solid black;
+}
+
+.services {
+  flex: 1;
 }
